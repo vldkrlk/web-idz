@@ -1,0 +1,77 @@
+/* ===== Header ===== */
+.header {
+  position: relative;
+  z-index: 20;
+  border-bottom: 1px solid var(--line);
+  background: rgba(10, 10, 16, 0.55);
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo { display: inline-flex; align-items: center; gap: 14px; }
+.logo__icon { width: 22px; height: 22px; fill: none; stroke: var(--text); stroke-width: 1; }
+.logo__text { font-size: 20px; font-weight: 500; letter-spacing: 0.06em; }
+.logo--lg .logo__icon { width: 36px; height: 36px; }
+.logo--lg .logo__text { font-size: 34px; }
+
+.nav__list { display: flex; gap: 32px; }
+.nav__link {
+  position: relative;
+  display: block;
+  padding-block: 8px;
+  font-size: 14px;
+  color: var(--muted);
+  transition: color .2s;
+}
+.nav__link:hover, .nav__link.is-active { color: var(--text); }
+.nav__link.is-active::after {
+  content: '';
+  position: absolute; left: 0; right: 0; bottom: -2px;
+  height: 1px; background: var(--accent);
+}
+
+.header__actions { display: flex; align-items: center; gap: 28px; }
+.lang {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font-size: 11px; letter-spacing: 0.1em;
+}
+
+.burger {
+  display: none;
+  width: 32px; height: 32px;
+  padding: 0;
+  background: none; border: 0; cursor: pointer;
+  flex-direction: column; justify-content: center; gap: 6px;
+}
+.burger span { display: block; height: 1.5px; background: var(--text); transition: transform .25s, opacity .25s; }
+
+/* ===== Footer ===== */
+.footer { padding-top: 80px; background: rgba(10, 10, 16, 0.35); }
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  padding-bottom: 80px;
+}
+.footer__text { margin-block: 28px 32px; color: var(--muted); font-size: 14px; }
+.footer__muted { color: var(--dim); }
+.footer__nav ul { display: grid; gap: 14px; margin-top: 18px; }
+.footer__nav a { font-size: 14px; transition: color .2s; }
+.footer__nav a:hover { color: var(--gold); }
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-block: 22px 32px;
+  border-top: 1px solid var(--line);
+}
+.footer__bottom .mono { color: var(--dim); font-size: 9px; }
+.footer__policy { font-size: 11px; color: var(--muted); }
+.footer__policy:hover { color: var(--text); }
+

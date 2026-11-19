@@ -17,3 +17,7 @@ document.querySelector('.form')?.addEventListener('submit', (e) => {
   form.querySelector('.form__btn').firstChild.textContent = 'Готово ';
   form.reset();
 });
+
+document.querySelectorAll('.god__link').forEach((link) => {
+  link.addEventListener('click', (e) => e.preventDefault());
+});
