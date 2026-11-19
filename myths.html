@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Міфи та герої — ЕФІР</title>
+  <meta name="description" content="Тесей, Орфей, Одіссей: міфи про героїв та їхні шляхи.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-myths">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Ефір — на головну">
+        <svg class="logo__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.5" />
+          <path d="M12 1.5v21M1.5 12h21M4.6 4.6l14.8 14.8M19.4 4.6L4.6 19.4" />
+        </svg>
+        <span class="logo__text">ЕФІР</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основна навігація">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Атлас</a></li>
+          <li><a href="gods.html" class="nav__link">Боги</a></li>
+          <li><a href="myths.html" class="nav__link is-active" aria-current="page">Міфи</a></li>
+          <li><a href="library.html" class="nav__link">Бібліотека</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang" type="button">УКР</button>
+        <a href="#" class="btn btn--outline header__cta">
+          Відкрити атлас
+          <svg class="btn__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg>
+        </a>
+        <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="myths">
+      <div class="container">
+        <div class="myths__head">
+          <h1 class="myths__title">Кожен герой має свій шлях</h1>
+          <p class="myths__lead">Дванадцять божеств. Дванадцять характерів.<br>Нескінченна кількість людських історій.</p>
+        </div>
+
+        <div class="myths__layout">
+          <figure class="feature">
+            <img src="assets/labyrinth.png" alt="Кам’яний лабіринт у космосі з рожевою ниткою, що веде до центру" width="390" height="254">
+            <figcaption class="feature__caption">
+              <span class="mono">Крит / Координати долі</span>
+              <span class="feature__title">Знайди свою нитку.</span>
+            </figcaption>
+          </figure>
+
+          <ol class="myths__list">
+            <li>
+              <a href="#article" class="myth is-active" aria-current="true">
+                <span class="myth__num mono">01</span>
+                <span class="myth__body">
+                  <span class="myth__title">Тесей і нитка Аріадни</span>
+                  <span class="myth__text">Лабіринт, чудовисько та обіцянка, що стала дороговказом.</span>
+                  <span class="myth__meta mono">Герої <i>·</i> 7 хв <i>·</i> Крит</span>
+                </span>
+                <svg class="myth__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#article" class="myth">
+                <span class="myth__num mono">02</span>
+                <span class="myth__body">
+                  <span class="myth__title">Орфей та Еврідіка</span>
+                  <span class="myth__text">Спуск у царство тіней заради любові. І один фатальний погляд.</span>
+                  <span class="myth__meta mono">Потойбіччя <i>·</i> 6 хв <i>·</i> Підземний світ</span>
+                </span>
+                <svg class="myth__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#article" class="myth">
+                <span class="myth__num mono">03</span>
+                <span class="myth__body">
+                  <span class="myth__title">Одіссей: дорога додому</span>
+                  <span class="myth__text">Десять років між морями, спокусами та гнівом богів.</span>
+                  <span class="myth__meta mono">Подорожі <i>·</i> 12 хв <i>·</i> Ітака</span>
+                </span>
+                <svg class="myth__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <article class="article" id="article">
+      <div class="container">
+        <h2 class="article__title">Тесей і нитка Аріадни</h2>
+        <div class="article__body">
+          <p>Історія Тесея та Мінотавра — один із найвідоміших міфів Давньої Греції. Тесей вирушає на Крит, щоб убити чудовисько, яке живе в лабіринті царя Міноса. Проте перемогти Мінотавра — лише половина справи. Навіть після перемоги залишається головна проблема: як вибратися з лабіринту, де немає очевидного шляху назад?<br>
+            Саме тут з’являється Аріадна. Вона закохується в Тесея і дає йому клубок нитки. Перед входом до лабіринту він прив’язує один кінець нитки, а потім розмотує її, рухаючись уперед. Завдяки цьому після зустрічі з Мінотавром Тесей може знайти дорогу назад.</p>
+          <p>Ця деталь робить міф особливо цікавим. Нитка Аріадни — це не просто спосіб фізично знайти вихід. Вона стала символом орієнтиру в ситуації, де легко загубитися. Лабіринт можна сприймати як образ складного шляху, на якому людина не бачить усієї дороги наперед. Щоб рухатися ним, не обов’язково знати кожен наступний поворот. Іноді достатньо мати щось, що допомагає не втратити напрямок.</p>
+          <p>У цьому сенсі нитка може символізувати знання, досвід, мету або навіть одну просту ідею, яка допомагає розібратися в складній ситуації. Коли навколо занадто багато можливостей і незрозуміло, який шлях правильний, саме такий орієнтир дозволяє продовжувати рух.</p>
+          <p>Водночас Тесей не отримує готової карти лабіринту. Аріадна не проходить його замість нього. Вона лише дає йому засіб повернутися. Сам шлях Тесей повинен пройти самостійно — зіткнутися з небезпекою, знайти Мінотавра і прийняти рішення, які приведуть його до виходу.</p>
+          <p>Можливо, саме тому образ нитки Аріадни залишається актуальним і сьогодні. У житті рідко можна заздалегідь побачити весь маршрут. Навчання, робота, пошук свого покликання чи важливі рішення часто нагадують лабіринт: ми не знаємо, куди приведе наступний поворот. Але це не означає, що потрібно залишатися на місці.<br>
+            Іноді достатньо знайти власну нитку — те, що допоможе не загубити себе під час руху. А далі залишається зробити те, що зробив Тесей: увійти до лабіринту й почати шукати свій шлях.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--lg" aria-label="Ефір — на головну">
+            <svg class="logo__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10.5" />
+              <path d="M12 1.5v21M1.5 12h21M4.6 4.6l14.8 14.8M19.4 4.6L4.6 19.4" />
+            </svg>
+            <span class="logo__text">ЕФІР</span>
+          </a>
+          <p class="footer__text">Космічний атлас давньогрецьких міфів.<br>Давні історії. Нові горизонти.</p>
+          <p class="mono footer__muted">Створено для допитливих</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Навігація у футері">
+          <p class="mono footer__muted">Досліджуй</p>
+          <ul>
+            <li><a href="#">Походження світу</a></li>
+            <li><a href="gods.html">Боги Олімпу</a></li>
+            <li><a href="myths.html">Міфи та герої</a></li>
+            <li><a href="library.html">Бібліотека</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="mono">© 2026 Ефір · Міфи належать усім</p>
+        <p class="mono footer__motto">Візуальна фантастика. Античні першоджерела.</p>
+        <a href="#" class="footer__policy">Політика приватності</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

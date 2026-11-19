@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бібліотека — ЕФІР</title>
+  <meta name="description" content="Відокремлюємо античні джерела від сучасних трактувань. І знаходимо нові запитання.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-library">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Ефір — на головну">
+        <svg class="logo__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.5" />
+          <path d="M12 1.5v21M1.5 12h21M4.6 4.6l14.8 14.8M19.4 4.6L4.6 19.4" />
+        </svg>
+        <span class="logo__text">ЕФІР</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основна навігація">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Атлас</a></li>
+          <li><a href="gods.html" class="nav__link">Боги</a></li>
+          <li><a href="myths.html" class="nav__link">Міфи</a></li>
+          <li><a href="library.html" class="nav__link is-active" aria-current="page">Бібліотека</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang" type="button">УКР</button>
+        <a href="#" class="btn btn--outline header__cta">
+          Відкрити атлас
+          <svg class="btn__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg>
+        </a>
+        <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="library">
+      <div class="container">
+        <div class="library__head">
+          <h1 class="library__title">Читати між рядками</h1>
+          <p class="library__lead">Відокремлюємо античні джерела від сучасних трактувань. І знаходимо нові запитання.</p>
+        </div>
+
+        <ul class="library__list">
+          <li>
+            <a href="#article" class="read is-active" aria-current="true">
+              <span class="read__media"><img src="assets/lib-scroll.png" alt="Сувій із письменами серед космічних орбіт" loading="lazy"></span>
+              <span class="read__body">
+                <span class="read__cat mono">Першоджерела / 01</span>
+                <span class="read__title">Гесіод: як влаштований світ богів</span>
+                <span class="read__text">«Теогонія» як карта родоводів, конфліктів і народження космосу.</span>
+                <span class="read__foot"><span class="mono">6 хв · Літературний огляд</span><svg class="read__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#article" class="read">
+              <span class="read__media"><img src="assets/lib-medusa.png" alt="Мармурова голова Медузи зі зміями замість волосся" loading="lazy"></span>
+              <span class="read__body">
+                <span class="read__cat mono">Погляд зблизька / 02</span>
+                <span class="read__title">Медуза: за межами образу чудовиська</span>
+                <span class="read__text">Чому версії міфу різняться і як мистецтво змінювало її образ.</span>
+                <span class="read__foot"><span class="mono">9 хв · Культурний контекст</span><svg class="read__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#article" class="read">
+              <span class="read__media"><img src="assets/lib-wing.png" alt="Крило з пір’я, що розсипається в космосі" loading="lazy"></span>
+              <span class="read__body">
+                <span class="read__cat mono">Символи / 03</span>
+                <span class="read__title">Ікар: між свободою та межею</span>
+                <span class="read__text">Воскові крила, сонце й історія, у якій кожна епоха впізнає себе.</span>
+                <span class="read__foot"><span class="mono">5 хв · Міф у мистецтві</span><svg class="read__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg></span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <article class="article" id="article">
+      <div class="container">
+        <h2 class="article__title">Гесіод: як влаштований світ</h2>
+        <div class="article__body">
+          <p>«Теогонія» Гесіода є найдавнішою збереженою спробою греків систематизувати міфологічний хаос і перетворити розрізнені оповіді на цілісну модель світобудови. Поет конструює космос через генеалогію: для архаїчної свідомості виникнення речей тотожне їхньому народженню, тому походження богів (теогонія) виступає прямим синонімом виникнення Всесвіту (космогонії). Світ починається не з вольового акту творця, а зі спонтанного саморозгортання першопочатків — Хаосу (первинної зяючої безодні), Геї (землі й матеріальної опори) та Ероса (рушійної сили злиття й життя), від яких розгортається багатошарова мапа стихій, явищ і сил.</p>
+          <p>Родовід у Гесіода виконує функцію структурованої ментальної карти, де кожне потомство відображає крок від абстрактного й некерованого до конкретного та впорядкованого. Темні первісні сили — Ніч (Нюкта) і Морок (Ереб) — породжують як світлові стихії (Ефір, День), так і трагічні виміри людського буття: Смерть, Старість, Обман і Сварку. Паралельно союз Землі (Геї) та Неба (Урана) формує просторовий каркас космосу, закладаючи ґрунт для переходу від чистої фізичної географії до соціально-політичної організації всесвіту.</p>
+          <p>Рушійною силою цієї еволюції стає ланцюг поколіннєвих конфліктів, побудований на архетипі бунту сина проти батька. Уран блокує народження власного потомства, ув’язнюючи дітей у надрах землі, через що титан Кронос оскоплює його серпом, силою розриваючи непорушну єдність неба й землі. Сам Кронос, намагаючись уникнути пророкованої поразки, поглинає новонароджених дітей, доки його син Зевс не обдурює батька, не звільняє братів і сестер та не розв’язує масштабну Титаномахію — війну, яка остаточно ламає свавілля архаїчних сил.</p>
+          <p>Фіналом гесіодівської драми є встановлення олімпійського порядку на чолі із Зевсом, який утверджує перехід від жорстокого первісного Хаосу до раціонального Космосу. Перемігши титанів і чудовисько Тіфона, Зевс стає не просто володарем, а архітектором справедливості: він одружується з Фемідою (богинею закону) та Метідою (мудрістю), породжуючи Ор (Законність, Справедливість, Мир) і Харит. У такий спосіб «Теогонія» вибудовує шлях Всесвіту від сліпої стихійності через насильство до стабільної, одухотвореної моральним законом космічної гармонії.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--lg" aria-label="Ефір — на головну">
+            <svg class="logo__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10.5" />
+              <path d="M12 1.5v21M1.5 12h21M4.6 4.6l14.8 14.8M19.4 4.6L4.6 19.4" />
+            </svg>
+            <span class="logo__text">ЕФІР</span>
+          </a>
+          <p class="footer__text">Космічний атлас давньогрецьких міфів.<br>Давні історії. Нові горизонти.</p>
+          <p class="mono footer__muted">Створено для допитливих</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Навігація у футері">
+          <p class="mono footer__muted">Досліджуй</p>
+          <ul>
+            <li><a href="#">Походження світу</a></li>
+            <li><a href="gods.html">Боги Олімпу</a></li>
+            <li><a href="myths.html">Міфи та герої</a></li>
+            <li><a href="library.html">Бібліотека</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="mono">© 2026 Ефір · Міфи належать усім</p>
+        <p class="mono footer__motto">Візуальна фантастика. Античні першоджерела.</p>
+        <a href="#" class="footer__policy">Політика приватності</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

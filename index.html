@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЕФІР — космічний атлас міфів</title>
+  <meta name="description" content="Боги, герої та чудовиська Еллади — у космічному атласі історій, що пережили тисячоліття.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Ефір — на головну">
+        <svg class="logo__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.5" />
+          <path d="M12 1.5v21M1.5 12h21M4.6 4.6l14.8 14.8M19.4 4.6L4.6 19.4" />
+        </svg>
+        <span class="logo__text">ЕФІР</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основна навігація">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link is-active" aria-current="page">Атлас</a></li>
+          <li><a href="gods.html" class="nav__link">Боги</a></li>
+          <li><a href="myths.html" class="nav__link">Міфи</a></li>
+          <li><a href="library.html" class="nav__link">Бібліотека</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang" type="button">УКР</button>
+        <a href="#" class="btn btn--outline header__cta">
+          Відкрити атлас
+          <svg class="btn__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg>
+        </a>
+        <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow"><span class="dot"></span>Давня Греція / Новий вимір</p>
+          <h1 class="hero__title">Міфи, написані серед зірок.</h1>
+          <p class="hero__text">Боги, герої та чудовиська Еллади — у космічному атласі історій, що пережили тисячоліття.</p>
+          <a href="#" class="btn btn--primary">
+            Почати подорож
+            <svg class="btn__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg>
+          </a>
+        </div>
+
+        <figure class="hero__media">
+          <img src="assets/zeus.jpg" alt="Мармуровий бюст Зевса в космосі з сяючим кільцем" width="1024" height="1024">
+          <figcaption class="hero__caption">
+            <span class="hero__caption-title">Зевс. Володар неба.</span>
+            <span class="mono">40°05′ Пн. · 22°21′ Сх.</span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="container">
+        <p class="hero__volume mono">Атлас античного всесвіту · Том I</p>
+      </div>
+    </section>
+
+    <!-- 01 INTRO -->
+    <section class="intro">
+      <div class="container intro__inner">
+        <div class="intro__aside">
+          <p class="label mono">01 / Сигнал із минулого</p>
+          <p class="intro__note">Не вигадані галактики.<br>Новий погляд на давні історії.</p>
+        </div>
+        <div class="intro__main">
+          <h2 class="intro__title">Колись міфи пояснювали світ.<br>Сьогодні вони відкривають цілий всесвіт.</h2>
+          <ul class="stats">
+            <li class="stats__item"><span class="stats__num">12</span><span class="stats__label mono">Олімпійських богів</span></li>
+            <li class="stats__item"><span class="stats__num">48</span><span class="stats__label mono">Історій у колекції</span></li>
+            <li class="stats__item"><span class="stats__num">88</span><span class="stats__label mono">Сузір’їв на небі</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 CHAOS -->
+    <section class="chaos">
+      <div class="container chaos__inner">
+        <div class="chaos__content">
+          <p class="label mono">02 / Первісні координати</p>
+          <h2 class="section-title">Спочатку<br class="br-desktop"> був Хаос.</h2>
+          <p class="chaos__text">До Олімпу, титанів і людських доль існувала безмежна порожнеча. З неї постали перші сили: Гея, Тартар і Ерос. Так починається «Теогонія» Гесіода.</p>
+        </div>
+
+        <figure class="scheme" aria-label="Схема космогонії: від Хаосу постають Гея, Ерос, Тартар і Нікс">
+          <p class="scheme__label scheme__label--top mono">Схема 001 / Космогонія</p>
+          <svg class="scheme__svg" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <g class="scheme__grid">
+              <line x1="320" y1="0" x2="320" y2="400" />
+              <line x1="0" y1="200" x2="640" y2="200" />
+              <circle cx="320" cy="200" r="140" />
+              <circle cx="320" cy="200" r="98" />
+            </g>
+            <g class="scheme__links">
+              <line x1="320" y1="200" x2="140" y2="80" />
+              <line x1="320" y1="200" x2="500" y2="80" />
+              <line x1="320" y1="200" x2="140" y2="320" />
+              <line x1="320" y1="200" x2="500" y2="320" />
+            </g>
+            <g class="scheme__stars">
+              <circle cx="66" cy="40" r="1.2" /><circle cx="98" cy="120" r="1" /><circle cx="560" cy="150" r="1" />
+              <circle cx="600" cy="360" r="1.2" /><circle cx="240" cy="40" r="0.9" /><circle cx="420" cy="380" r="1" />
+            </g>
+            <circle class="scheme__core" cx="320" cy="200" r="50" />
+            <g class="scheme__nodes">
+              <circle cx="140" cy="80" r="4" /><circle cx="500" cy="80" r="4" />
+              <circle cx="140" cy="320" r="4" /><circle cx="500" cy="320" r="4" />
+            </g>
+          </svg>
+          <span class="scheme__node scheme__node--core">Хаос</span>
+          <span class="scheme__node" style="--x:21.9%;--y:23%">Гея<small class="mono">Земля</small></span>
+          <span class="scheme__node" style="--x:78.1%;--y:23%">Ерос<small class="mono">Притягання</small></span>
+          <span class="scheme__node" style="--x:21.9%;--y:83%">Тартар<small class="mono">Безодня</small></span>
+          <span class="scheme__node" style="--x:78.1%;--y:83%">Нікс<small class="mono">Ніч</small></span>
+          <p class="scheme__label scheme__label--bottom mono">Зв’язки за «Теогонією» Гесіода · не в масштабі</p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 03 TIMELINE -->
+    <section class="timeline">
+      <div class="container">
+        <div class="timeline__head">
+          <div>
+            <p class="label mono"><span class="dot"></span>03 / Часова вісь</p>
+            <h2 class="section-title">Від Хаосу до героїв</h2>
+          </div>
+          <p class="timeline__lead">Не календар, а послідовність поколінь.<br>Орієнтир у великій історії античного світу.</p>
+        </div>
+
+        <ol class="timeline__list">
+          <li class="era">
+            <span class="era__num">I</span>
+            <h3 class="era__title">Первісні сили</h3>
+            <p class="era__text">Хаос, Гея, Нікс і народження основ світобудови.</p>
+            <p class="era__tag mono">Початок</p>
+          </li>
+          <li class="era">
+            <span class="era__num">II</span>
+            <h3 class="era__title">Доба титанів</h3>
+            <p class="era__text">Уран і Кронос. Влада, що боїться власних дітей.</p>
+            <p class="era__tag mono">Перше покоління</p>
+          </li>
+          <li class="era">
+            <span class="era__num">III</span>
+            <h3 class="era__title">Доба Олімпу</h3>
+            <p class="era__text">Перемога Зевса та новий порядок богів.</p>
+            <p class="era__tag mono">Титаномахія</p>
+          </li>
+          <li class="era">
+            <span class="era__num">IV</span>
+            <h3 class="era__title">Доба героїв</h3>
+            <p class="era__text">Персей, Геракл і Тесей між людським та божественним.</p>
+            <p class="era__tag mono">Великі подвиги</p>
+          </li>
+          <li class="era">
+            <span class="era__num">V</span>
+            <h3 class="era__title">Троянський цикл</h3>
+            <p class="era__text">Ахілл, падіння Трої та повернення Одіссея.</p>
+            <p class="era__tag mono">Кінець епохи</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 04 SUBSCRIBE -->
+    <section class="subscribe">
+      <div class="container subscribe__inner">
+        <div class="subscribe__content">
+          <p class="label mono">04 / Залишайся на зв’язку</p>
+          <h2 class="section-title">Нові міфи.<br>На твоїй орбіті.</h2>
+          <p class="subscribe__text">Один лист на місяць: історія, першоджерело та нова точка на карті. Без інформаційного шуму.</p>
+        </div>
+
+        <form class="form" action="#" novalidate>
+          <label class="form__label" for="email">Твоя електронна пошта</label>
+          <div class="form__row">
+            <input class="form__input" type="email" id="email" name="email" placeholder="твоя@пошта.ua" required autocomplete="email">
+            <button class="btn btn--primary form__btn" type="submit">
+              Підписатися
+              <svg class="btn__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg>
+            </button>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" name="agree" required>
+            <span class="checkbox__box" aria-hidden="true"></span>
+            <span class="checkbox__text">Погоджуюся з політикою приватності.<br>Відписатися можна будь-якої миті.</span>
+          </label>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="logo logo--lg" aria-label="Ефір — на головну">
+            <svg class="logo__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10.5" />
+              <path d="M12 1.5v21M1.5 12h21M4.6 4.6l14.8 14.8M19.4 4.6L4.6 19.4" />
+            </svg>
+            <span class="logo__text">ЕФІР</span>
+          </a>
+          <p class="footer__text">Космічний атлас давньогрецьких міфів.<br>Давні історії. Нові горизонти.</p>
+          <p class="mono footer__muted">Створено для допитливих</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Навігація у футері">
+          <p class="mono footer__muted">Досліджуй</p>
+          <ul>
+            <li><a href="#">Походження світу</a></li>
+            <li><a href="gods.html">Боги Олімпу</a></li>
+            <li><a href="myths.html">Міфи та герої</a></li>
+            <li><a href="library.html">Бібліотека</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="mono">© 2026 Ефір · Міфи належать усім</p>
+        <p class="mono footer__motto">Візуальна фантастика. Античні першоджерела.</p>
+        <a href="#" class="footer__policy">Політика приватності</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

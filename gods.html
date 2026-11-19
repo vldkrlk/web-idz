@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Боги Олімпу — ЕФІР</title>
+  <meta name="description" content="Дванадцять божеств. Дванадцять характерів. Нескінченна кількість людських історій.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-gods">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Ефір — на головну">
+        <svg class="logo__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.5" />
+          <path d="M12 1.5v21M1.5 12h21M4.6 4.6l14.8 14.8M19.4 4.6L4.6 19.4" />
+        </svg>
+        <span class="logo__text">ЕФІР</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основна навігація">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Атлас</a></li>
+          <li><a href="gods.html" class="nav__link is-active" aria-current="page">Боги</a></li>
+          <li><a href="myths.html" class="nav__link">Міфи</a></li>
+          <li><a href="library.html" class="nav__link">Бібліотека</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang" type="button">УКР</button>
+        <a href="#" class="btn btn--outline header__cta">
+          Відкрити атлас
+          <svg class="btn__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg>
+        </a>
+        <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="gods">
+      <div class="container">
+        <div class="gods__head">
+          <h1 class="gods__title">Сили, що керують світом</h1>
+          <p class="gods__lead">Дванадцять божеств. Дванадцять характерів.<br>Нескінченна кількість людських історій.</p>
+        </div>
+
+        <ul class="gods__grid">
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-zeus.png" alt="Мармуровий бюст: Зевс" width="416" height="372" loading="eager">
+                <span class="god__badge mono">Досьє / 001</span>
+              </div>
+              <p class="god__tags mono">Небо / Грім / Влада</p>
+              <h2 class="god__name">Зевс</h2>
+              <p class="god__text">Володар Олімпу, хранитель порядку й повелитель блискавок.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-athena.png" alt="Мармуровий бюст: Афіна" width="416" height="372" loading="eager">
+                <span class="god__badge mono">Досьє / 002</span>
+              </div>
+              <p class="god__tags mono">Мудрість / Стратегія / Ремесла</p>
+              <h2 class="god__name">Афіна</h2>
+              <p class="god__text">Богиня мудрості та справедливої війни. Покровителька Афін.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-poseidon.png" alt="Мармуровий бюст: Посейдон" width="416" height="372" loading="eager">
+                <span class="god__badge mono">Досьє / 003</span>
+              </div>
+              <p class="god__tags mono">Море / Землетруси / Коні</p>
+              <h2 class="god__name">Посейдон</h2>
+              <p class="god__text">Володар морських глибин, чий тризуб здіймає хвилі та бурі.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-zeus.png" alt="Мармуровий бюст: Аполлон" width="416" height="372" loading="lazy">
+                <span class="god__badge mono">Досьє / 004</span>
+              </div>
+              <p class="god__tags mono">Небо / Світло / Мистецтво</p>
+              <h2 class="god__name">Аполлон</h2>
+              <p class="god__text">Бог світла, пророцтва та музики. Його золота ліра дарує гармонію, а срібні стріли несуть невідворотну кару.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-athena.png" alt="Мармуровий бюст: Артеміда" width="416" height="372" loading="lazy">
+                <span class="god__badge mono">Досьє / 005</span>
+              </div>
+              <p class="god__tags mono">Полювання / Місяць / Дика природа</p>
+              <h2 class="god__name">Артеміда</h2>
+              <p class="god__text">Володарка лісів та захисниця диких звірів. Неперевершена мисливиця, чий срібний лук сяє під світлом нічного неба.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-poseidon.png" alt="Мармуровий бюст: Афродіта" width="416" height="372" loading="lazy">
+                <span class="god__badge mono">Досьє / 006</span>
+              </div>
+              <p class="god__tags mono">Любов / Краса / Пристрасть</p>
+              <h2 class="god__name">Афродіта</h2>
+              <p class="god__text">Найпрекрасніша з богинь, що народилася з морської піни. Вона керує серцями смертних і богів, даруючи любов та натхнення.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-zeus.png" alt="Мармуровий бюст: Арес" width="416" height="372" loading="lazy">
+                <span class="god__badge mono">Досьє / 007</span>
+              </div>
+              <p class="god__tags mono">Війна / Руйнування / Відвага</p>
+              <h2 class="god__name">Арес</h2>
+              <p class="god__text">Несамовитий бог кривавих битв і військового шаленства. Його обладунки палають у вогні війни, а меч не знає жалю до ворогів.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-athena.png" alt="Мармуровий бюст: Гефест" width="416" height="372" loading="lazy">
+                <span class="god__badge mono">Досьє / 008</span>
+              </div>
+              <p class="god__tags mono">Вогонь / Ковальство / Ремесла</p>
+              <h2 class="god__name">Гефест</h2>
+              <p class="god__text">Майстерний коваль і володар підземного вогню. У своїх розпечених горнах він кує непереможну зброю та величні палаци для богів.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-poseidon.png" alt="Мармуровий бюст: Гермес" width="416" height="372" loading="lazy">
+                <span class="god__badge mono">Досьє / 009</span>
+              </div>
+              <p class="god__tags mono">Мандри / Торгівля / Хитрість</p>
+              <h2 class="god__name">Гермес</h2>
+              <p class="god__text">Прудконогий вісник богів у крилатих сандаліях. Провідник душ у підземне царство, покровитель купців, мандрівників та винахідників.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-zeus.png" alt="Мармуровий бюст: Деметра" width="416" height="372" loading="lazy">
+                <span class="god__badge mono">Досьє / 010</span>
+              </div>
+              <p class="god__tags mono">Родючість / Врожай / Земля</p>
+              <h2 class="god__name">Деметра</h2>
+              <p class="god__text">Велика мати та хранителька життя на землі. Вона дарує людям щедрі врожаї, а її смуток здатний занурити весь світ у зимовий сон.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-athena.png" alt="Мармуровий бюст: Гера" width="416" height="372" loading="lazy">
+                <span class="god__badge mono">Досьє / 011</span>
+              </div>
+              <p class="god__tags mono">Сім’я / Шлюб / Материнство</p>
+              <h2 class="god__name">Гера</h2>
+              <p class="god__text">Велична цариця Олімпу та законна дружина Зевса. Покровителька священних союзів, яка ревно оберігає закони шлюбу та вірності.</p>
+            </a>
+          </li>
+          <li class="god">
+            <a href="#" class="god__link">
+              <div class="god__media">
+                <img src="assets/god-poseidon.png" alt="Мармуровий бюст: Діоніс" width="416" height="372" loading="lazy">
+                <span class="god__badge mono">Досьє / 012</span>
+              </div>
+              <p class="god__tags mono">Вино / Радість / Театр</p>
+              <h2 class="god__name">Діоніс</h2>
+              <p class="god__text">Бог виноробства, екстазу та життєвих сил. Він приносить людям веселощі, звільняє від турбот і вчить цінувати кожну мить земного буття.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--lg" aria-label="Ефір — на головну">
+            <svg class="logo__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10.5" />
+              <path d="M12 1.5v21M1.5 12h21M4.6 4.6l14.8 14.8M19.4 4.6L4.6 19.4" />
+            </svg>
+            <span class="logo__text">ЕФІР</span>
+          </a>
+          <p class="footer__text">Космічний атлас давньогрецьких міфів.<br>Давні історії. Нові горизонти.</p>
+          <p class="mono footer__muted">Створено для допитливих</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Навігація у футері">
+          <p class="mono footer__muted">Досліджуй</p>
+          <ul>
+            <li><a href="#">Походження світу</a></li>
+            <li><a href="gods.html">Боги Олімпу</a></li>
+            <li><a href="myths.html">Міфи та герої</a></li>
+            <li><a href="library.html">Бібліотека</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="mono">© 2026 Ефір · Міфи належать усім</p>
+        <p class="mono footer__motto">Візуальна фантастика. Античні першоджерела.</p>
+        <a href="#" class="footer__policy">Політика приватності</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
