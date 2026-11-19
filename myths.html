@@ -54,17 +54,17 @@
         </div>
 
         <div class="myths__layout">
-          <figure class="feature">
-            <img src="assets/labyrinth.png" alt="Кам’яний лабіринт у космосі з рожевою ниткою, що веде до центру" width="390" height="254">
+          <figure class="feature" id="myth-feature">
+            <img id="myth-feature-img" src="assets/labyrinth.png" alt="Кам’яний лабіринт у космосі з рожевою ниткою, що веде до центру" width="390" height="254">
             <figcaption class="feature__caption">
-              <span class="mono">Крит / Координати долі</span>
-              <span class="feature__title">Знайди свою нитку.</span>
+              <span class="mono" id="myth-feature-tag">Крит / Координати долі</span>
+              <span class="feature__title" id="myth-feature-title">Знайди свою нитку.</span>
             </figcaption>
           </figure>
 
           <ol class="myths__list">
             <li>
-              <a href="#article" class="myth is-active" aria-current="true">
+              <a href="#article" class="myth is-active" data-myth="theseus" aria-current="true">
                 <span class="myth__num mono">01</span>
                 <span class="myth__body">
                   <span class="myth__title">Тесей і нитка Аріадни</span>
@@ -75,7 +75,7 @@
               </a>
             </li>
             <li>
-              <a href="#article" class="myth">
+              <a href="#article" class="myth" data-myth="orpheus">
                 <span class="myth__num mono">02</span>
                 <span class="myth__body">
                   <span class="myth__title">Орфей та Еврідіка</span>
@@ -86,7 +86,7 @@
               </a>
             </li>
             <li>
-              <a href="#article" class="myth">
+              <a href="#article" class="myth" data-myth="odysseus">
                 <span class="myth__num mono">03</span>
                 <span class="myth__body">
                   <span class="myth__title">Одіссей: дорога додому</span>
@@ -103,8 +103,8 @@
 
     <article class="article" id="article">
       <div class="container">
-        <h2 class="article__title">Тесей і нитка Аріадни</h2>
-        <div class="article__body">
+        <h2 class="article__title" id="article-title">Тесей і нитка Аріадни</h2>
+        <div class="article__body" id="article-body">
           <p>Історія Тесея та Мінотавра — один із найвідоміших міфів Давньої Греції. Тесей вирушає на Крит, щоб убити чудовисько, яке живе в лабіринті царя Міноса. Проте перемогти Мінотавра — лише половина справи. Навіть після перемоги залишається головна проблема: як вибратися з лабіринту, де немає очевидного шляху назад?<br>
             Саме тут з’являється Аріадна. Вона закохується в Тесея і дає йому клубок нитки. Перед входом до лабіринту він прив’язує один кінець нитки, а потім розмотує її, рухаючись уперед. Завдяки цьому після зустрічі з Мінотавром Тесей може знайти дорогу назад.</p>
           <p>Ця деталь робить міф особливо цікавим. Нитка Аріадни — це не просто спосіб фізично знайти вихід. Вона стала символом орієнтиру в ситуації, де легко загубитися. Лабіринт можна сприймати як образ складного шляху, на якому людина не бачить усієї дороги наперед. Щоб рухатися ним, не обов’язково знати кожен наступний поворот. Іноді достатньо мати щось, що допомагає не втратити напрямок.</p>
@@ -153,5 +153,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/myths.js"></script>
 </body>
 </html>

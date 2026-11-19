@@ -47,54 +47,70 @@
 
   <main>
     <section class="library">
-      <div class="container">
-        <div class="library__head">
-          <h1 class="library__title">Читати між рядками</h1>
-          <p class="library__lead">Відокремлюємо античні джерела від сучасних трактувань. І знаходимо нові запитання.</p>
-        </div>
+          <div class="container">
+            <div class="library__head">
+              <h1 class="library__title">Читати між рядками</h1>
+              <p class="library__lead">Відокремлюємо античні джерела від сучасних трактувань. І знаходимо нові запитання.</p>
+            </div>
 
-        <ul class="library__list">
-          <li>
-            <a href="#article" class="read is-active" aria-current="true">
-              <span class="read__media"><img src="assets/lib-scroll.png" alt="Сувій із письменами серед космічних орбіт" loading="lazy"></span>
-              <span class="read__body">
-                <span class="read__cat mono">Першоджерела / 01</span>
-                <span class="read__title">Гесіод: як влаштований світ богів</span>
-                <span class="read__text">«Теогонія» як карта родоводів, конфліктів і народження космосу.</span>
-                <span class="read__foot"><span class="mono">6 хв · Літературний огляд</span><svg class="read__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg></span>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#article" class="read">
-              <span class="read__media"><img src="assets/lib-medusa.png" alt="Мармурова голова Медузи зі зміями замість волосся" loading="lazy"></span>
-              <span class="read__body">
-                <span class="read__cat mono">Погляд зблизька / 02</span>
-                <span class="read__title">Медуза: за межами образу чудовиська</span>
-                <span class="read__text">Чому версії міфу різняться і як мистецтво змінювало її образ.</span>
-                <span class="read__foot"><span class="mono">9 хв · Культурний контекст</span><svg class="read__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg></span>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#article" class="read">
-              <span class="read__media"><img src="assets/lib-wing.png" alt="Крило з пір’я, що розсипається в космосі" loading="lazy"></span>
-              <span class="read__body">
-                <span class="read__cat mono">Символи / 03</span>
-                <span class="read__title">Ікар: між свободою та межею</span>
-                <span class="read__text">Воскові крила, сонце й історія, у якій кожна епоха впізнає себе.</span>
-                <span class="read__foot"><span class="mono">5 хв · Міф у мистецтві</span><svg class="read__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg></span>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
+            <div class="library-slider" id="library-slider">
+              <div class="library-slider__controls">
+                <span class="mono library-slider__counter" id="library-counter">01 / 03</span>
+                <div class="library-slider__btns">
+                  <button class="library-slider__btn" type="button" id="library-prev" aria-label="Попередня стаття">
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3L5 8l5 5" /></svg>
+                  </button>
+                  <button class="library-slider__btn" type="button" id="library-next" aria-label="Наступна стаття">
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="library-slider__viewport">
+                <ul class="library__list" id="library-track">
+                  <li class="library-slider__slide">
+                    <a href="#article" class="read is-active" data-read="hesiod" aria-current="true">
+                      <span class="read__media"><img src="assets/lib-scroll.png" alt="Сувій із письменами серед космічних орбіт" loading="lazy"></span>
+                      <span class="read__body">
+                        <span class="read__cat mono">Першоджерела / 01</span>
+                        <span class="read__title">Гесіод: як влаштований світ богів</span>
+                        <span class="read__text">«Теогонія» як карта родоводів, конфліктів і народження космосу.</span>
+                        <span class="read__foot"><span class="mono">6 хв · Літературний огляд</span><svg class="read__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="library-slider__slide">
+                    <a href="#article" class="read" data-read="medusa">
+                      <span class="read__media"><img src="assets/lib-medusa.png" alt="Мармурова голова Медузи зі зміями замість волосся" loading="lazy"></span>
+                      <span class="read__body">
+                        <span class="read__cat mono">Погляд зблизька / 02</span>
+                        <span class="read__title">Медуза: за межами образу чудовиська</span>
+                        <span class="read__text">Чому версії міфу різняться і як мистецтво змінювало її образ.</span>
+                        <span class="read__foot"><span class="mono">9 хв · Культурний контекст</span><svg class="read__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="library-slider__slide">
+                    <a href="#article" class="read" data-read="icarus">
+                      <span class="read__media"><img src="assets/lib-wing.png" alt="Крило з пір’я, що розсипається в космосі" loading="lazy"></span>
+                      <span class="read__body">
+                        <span class="read__cat mono">Символи / 03</span>
+                        <span class="read__title">Ікар: між свободою та межею</span>
+                        <span class="read__text">Воскові крила, сонце й історія, у якій кожна епоха впізнає себе.</span>
+                        <span class="read__foot"><span class="mono">5 хв · Міф у мистецтві</span><svg class="read__arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" /></svg></span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
     </section>
 
     <article class="article" id="article">
       <div class="container">
-        <h2 class="article__title">Гесіод: як влаштований світ</h2>
-        <div class="article__body">
+        <h2 class="article__title" id="article-title">Гесіод: як влаштований світ</h2>
+        <div class="article__body" id="article-body">
           <p>«Теогонія» Гесіода є найдавнішою збереженою спробою греків систематизувати міфологічний хаос і перетворити розрізнені оповіді на цілісну модель світобудови. Поет конструює космос через генеалогію: для архаїчної свідомості виникнення речей тотожне їхньому народженню, тому походження богів (теогонія) виступає прямим синонімом виникнення Всесвіту (космогонії). Світ починається не з вольового акту творця, а зі спонтанного саморозгортання першопочатків — Хаосу (первинної зяючої безодні), Геї (землі й матеріальної опори) та Ероса (рушійної сили злиття й життя), від яких розгортається багатошарова мапа стихій, явищ і сил.</p>
           <p>Родовід у Гесіода виконує функцію структурованої ментальної карти, де кожне потомство відображає крок від абстрактного й некерованого до конкретного та впорядкованого. Темні первісні сили — Ніч (Нюкта) і Морок (Ереб) — породжують як світлові стихії (Ефір, День), так і трагічні виміри людського буття: Смерть, Старість, Обман і Сварку. Паралельно союз Землі (Геї) та Неба (Урана) формує просторовий каркас космосу, закладаючи ґрунт для переходу від чистої фізичної географії до соціально-політичної організації всесвіту.</p>
           <p>Рушійною силою цієї еволюції стає ланцюг поколіннєвих конфліктів, побудований на архетипі бунту сина проти батька. Уран блокує народження власного потомства, ув’язнюючи дітей у надрах землі, через що титан Кронос оскоплює його серпом, силою розриваючи непорушну єдність неба й землі. Сам Кронос, намагаючись уникнути пророкованої поразки, поглинає новонароджених дітей, доки його син Зевс не обдурює батька, не звільняє братів і сестер та не розв’язує масштабну Титаномахію — війну, яка остаточно ламає свавілля архаїчних сил.</p>
@@ -140,5 +156,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/library.js"></script>
 </body>
 </html>
