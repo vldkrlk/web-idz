@@ -42,6 +42,15 @@
     if (!track || !readLinks.length || !articleBox || !articleTitle || !articleBody) return;
 
     let currentIndex = 0;
+    const isMobile = () => window.innerWidth <= 767;
+
+    function syncTrackPosition() {
+      if (isMobile()) {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      } else {
+        track.style.transform = 'none';
+      }
+    }
 
     function updateArticle(key, shouldScroll = false) {
       const data = libraryData[key];
@@ -64,10 +73,8 @@
       const total = readLinks.length;
       currentIndex = (index + total) % total;
 
-      // Зсуваємо стрічку слайдера
-      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      syncTrackPosition();
 
-      // Оновлюємо активний стан картки
       readLinks.forEach((item, idx) => {
         const isActive = idx === currentIndex;
         item.classList.toggle('is-active', isActive);
@@ -78,7 +85,6 @@
         }
       });
 
-      // Оновлюємо лічильник (01 / 03)
       if (counter) {
         const currentStr = String(currentIndex + 1).padStart(2, '0');
         const totalStr = String(total).padStart(2, '0');
@@ -89,16 +95,18 @@
       updateArticle(activeKey, shouldScroll);
     }
 
-    // Кнопки "Назад" і "Вперед" (крутяться по колу)
     if (prevBtn) {
-      prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1, false));
+      prevBtn.addEventListener('click', () => {
+        if (isMobile()) goToSlide(currentIndex - 1, false);
+      });
     }
 
     if (nextBtn) {
-      nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1, false));
+      nextBtn.addEventListener('click', () => {
+        if (isMobile()) goToSlide(currentIndex + 1, false);
+      });
     }
 
-    // Клік по самій картці — скролить до тексту статті
     readLinks.forEach((link, idx) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -110,18 +118,21 @@
       });
     });
 
-    // Свайп пальцем на мобільному
     let touchStartX = 0;
     track.addEventListener('touchstart', (e) => {
+      if (!isMobile()) return;
       touchStartX = e.changedTouches[0].screenX;
     }, { passive: true });
 
     track.addEventListener('touchend', (e) => {
+      if (!isMobile()) return;
       const diff = touchStartX - e.changedTouches[0].screenX;
       if (Math.abs(diff) > 45) {
         goToSlide(diff > 0 ? currentIndex + 1 : currentIndex - 1, false);
       }
     }, { passive: true });
+
+    window.addEventListener('resize', syncTrackPosition);
   }
 
   if (document.readyState === 'loading') {
